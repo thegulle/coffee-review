@@ -1,0 +1,19 @@
+.hover01 {
+    // box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+    transition: $eio;
+
+    &:hover {
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+        transform: translate(0px, -4px) scale(1.01);
+    }
+}
+
+.hover02 {
+    // box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+    transition: $eio;
+
+    &:hover {
+        box-shadow: 0px 17px 30px -8px rgba(0, 0, 0, 0.2);
+        transform: translate(0px, -1px) scale(1.02);
+    }
+}

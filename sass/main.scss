@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*
+  ############################################################
+    This file created by EG.
+  ############################################################
+*/
+
+// Custom Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+// Responsive
+@import "global/responsive";
+
+// Color
+@import "global/color";
+
+// Variable
+@import "global/variable";
+
+// Fixed Codes
+@import "global/fixed";
+
+// Hover
+@import "global/hover";
+
+// Slick
+@import "global/slick";
+
+// İndex
+@import "global/index";
+
+// Piece
+@import "global/piece";
+
+
+// Static
+@import "static/header";
+
+@import "static/footer";
+
+
+
+
+// Components
+@import "components/header";
+@import "components/contact";
+@import "components/forms";
+@import "components/footer";
+

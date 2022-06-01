@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+// ##########################
+
+// Transtion
+$all:all .2s linear;
+$eio:all ease-in-out 300ms;
+// Transtion End
+
+// Font 
+$font01:'Montserrat', sans-serif;
+// Font  End
+
+// Fixed Start 
+%fullPage {
+  height: 100%;
+  width: 100%;
+}
+
+%ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+// Fixed Start  End
+
+
+// Box Location
+%flexLeftUp{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+%flexLeftCenter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+%flexLeftDown{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+%flexUpcenter{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+%flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flexDownCenter{
+  display: flex;
+  justify-content: flex;
+  align-items: flex-end;
+}
+%flexRightUp{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+%flexRightCenter{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+%flexRightDown{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+// Box Location End
+
+
+// Margin- Padding
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100);
+$sides: (top, bottom, left, right); 
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .p#{str-slice($side, 0, 1)}#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+// Margin- Padding End
+
+
+// Paragraf line clamp
+%pg3{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow:hidden;
+}
+
+
+@each $num in '3' '4' '5' {
+  .pg-#{$num} {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$num};
+    -webkit-box-orient: vertical;  
+    overflow:hidden;
+  }
+}
+// Paragraf line clamp End

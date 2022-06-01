@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+div:focus {
+  outline: none;
+}
+
+ul {
+  @extend %ul;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label {
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font01;
+  font-weight: 400;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: $background;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+input:invalid {
+  border-color: red;
+}
+
+form:invalid button[type="submit"] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1380px;
+  }
+}

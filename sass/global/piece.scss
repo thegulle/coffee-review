@@ -1,0 +1,61 @@
+@charset "UTF-8";
+// Hamburger Menu
+.menu-trigger {
+    position: relative;
+    z-index: 10;
+    width: 30px;
+    height: 22px;
+    display: none;
+    transition: all .4s;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 12px;
+    transform: translateY(4px);
+
+    @include max992 {
+        display: inline-block;
+    }
+
+    span {
+        display: inline-block;
+        transition: all .4s ease-in-out;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        border-radius: 2px;
+
+        &:nth-of-type(1) {
+            top: 0;
+        }
+
+        &:nth-of-type(2) {
+            top: 9px;
+        }
+
+        &:nth-of-type(3) {
+            bottom: 0;
+        }
+    }
+
+    &.active {
+        span {
+            &:nth-of-type(1) {
+                -webkit-transform: translateY(12px) rotate(-315deg);
+                transform: translateY(12px) rotate(-315deg);
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                -webkit-transform: translateY(-7px) rotate(315deg);
+                transform: translateY(-7px) rotate(315deg);
+            }
+        }
+    }
+}
+// Hamburger Menu End

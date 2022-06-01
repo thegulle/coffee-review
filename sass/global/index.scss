@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+.product-information {
+    padding: 25px 0;
+    .text {
+        h2 {
+            font-size: 65px;
+            line-height: 70px;
+            font-weight: 600;
+            color: $text-color;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            color: $text-color;
+            line-height: 25px;
+            margin-bottom: 25px;
+        }
+
+        .price {
+            font-size: 45px;
+            font-weight: 600;
+            color: $text-color;
+            display: block;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            background-color: $primary-color;
+            color: $text-color;
+            padding: 10px 20px;
+            border-radius: 50px;
+            height: 50px;
+            box-shadow: 0px 3px 3px #5CA3A8;
+            transition: $eio;
+            &:hover {
+                .icon {
+                    margin-left: 20px;
+                }
+            }
+            .icon {
+                width: 30px;
+                height: 30px;
+                background-color: $third-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: #fff;
+                margin-left: 10px;
+                font-size: 20px;
+                transition: $eio;
+            }
+            @include max992{
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .picture {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .product {
+            width: 450px;
+            height: 450px;
+            object-fit: contain;
+            position: absolute;
+            margin-top: -50px;
+        }
+
+        .bg {
+            width: 450px;
+            height: 450px;
+            object-fit: contain;
+            @include max992{
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        justify-content: flex-end;
+        &.last {
+            margin-bottom: 0;
+            @include max992{
+                margin-bottom: 50px;
+            }
+        }
+        img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+
+        .info {
+            h4 {
+                color: $text-color;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: $text-color;
+                font-size: 14px;
+                line-height: 25px;
+                font-weight: 400;
+            }
+        }
+        @include max992{
+            justify-content: center;
+        }
+    }
+}
+
+.product-list {
+    padding: 70px 0;
+    @include max992{
+        background: $second-color;
+    }
+    .container {
+        position: relative;
+        .bg {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            @include max992{
+                display:none;
+            }
+        }
+
+        .item {
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+                margin-bottom: 15px;
+                margin-top: 0px;
+            }
+
+            .text {
+                text-align: center;
+                h4 {
+                    color: #fff;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                .button {
+                    color: rgba($color: #fff, $alpha: .6);
+
+                    i {
+                        color: #fff;
+                        font-size: 14px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            @include max992{
+                margin-bottom: 55px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+$twitter:#00aced;
+$facebook:#3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+$instagram: #bc2a8d;
+$flickr: #ff0084;
+$dribble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+
+// Social Media Bg
+.bFacebook{background:$facebook;}
+.bTwitter{background: $twitter;}
+.bInstagram{background: $instagram;}
+.bGogglePlus{background: $googleplus;}
+.bGogglePlus{background: $googleplus;}
+.bYoutube{background: $youtube;}
+.bPinterest{background: $pinterest;}
+.bLinkedin{background: $linkedin;}
+.bVimeo{background: $vimeo;}
+.btumblr{background: $tumblr;}
+.bflickr{background: $flickr;}
+.bDribble{background: $dribble;}
+.bQuora{background: $quora;}
+.bFoursquare{background: $foursquare;}
+.bForrst{background: $forrst;}
+.bVk{background: $vk;}
+.bWordpress{background: $wordpress;}
+.bStumbleupon{background: $stumbleupon;}
+.bYahoo{background: $yahoo;}
+.bBlogger{background: $blogger;}
+.bSoundcloud{background: $soundcloud;}
+// Social Media BG End
+
+// Social Media Color
+.cFacebook{color: $facebook;}
+.cTwitter{color: $twitter;}
+.cInstagram{color: $instagram;}
+.cGogglePlus{color: $googleplus;}
+.cGogglePlus{color: $googleplus;}
+.cYoutube{color: $youtube;}
+.cPinterest{color: $pinterest;}
+.cLinkedin{color: $linkedin;}
+.cVimeo{color: $vimeo;}
+.ctumblr{color: $tumblr;}
+.cflickr{color: $flickr;}
+.cDribble{color: $dribble;}
+.cQuora{color: $quora;}
+.cFoursquare{color: $foursquare;}
+.cForrst{color: $forrst;}
+.cVk{color: $vk;}
+.cWordpress{color: $wordpress;}
+.cStumbleupon{color: $stumbleupon;}
+.cYahoo{color: $yahoo;}
+.cBlogger{color: $blogger;}
+.cSoundcloud{color: $soundcloud;}
+// Social Media Color End
+
+// Social Media Color:hover
+.hFacebook{&:hover{color: $facebook;}}
+.hTwitter{&:hover{color: $twitter;}}
+.hInstagram{&:hover{color: $instagram;}}
+.hGogglePlus{&:hover{color: $googleplus;}}
+.hGogglePlus{&:hover{color: $googleplus;}}
+.hYoutube{&:hover{color: $youtube;}}
+.hPinterest{&:hover{color: $pinterest;}}
+.hLinkedin{&:hover{color: $linkedin;}}
+.hVimeo{&:hover{color: $vimeo;}}
+.htumblr{&:hover{color: $tumblr;}}
+.hflickr{&:hover{color: $flickr;}}
+.hDribble{&:hover{color: $dribble;}}
+.hQuora{&:hover{color: $quora;}}
+.hFoursquare{&:hover{color: $foursquare;}}
+.hForrst{&:hover{color: $forrst;}}
+.hVk{&:hover{color: $vk;}}
+.hWordpress{&:hover{color: $wordpress;}}
+.hStumbleupon{&:hover{color: $stumbleupon;}}
+.hYahoo{&:hover{color: $yahoo;}}
+.hBlogger{&:hover{color: $blogger;}}
+.hSoundcloud{&:hover{color: $soundcloud;}}
+// Social Media Color:hover End
